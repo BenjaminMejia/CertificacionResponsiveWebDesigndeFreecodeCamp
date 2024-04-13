@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulario de Encuesta</h1>
+
+    <p id="description">
+      Complete el siguiente formulario. Nos comunicaremos con usted.
+    </p>
+
+    <form id="survey-form">
+      <fieldset class="aboutYou">
+        <legend>Cuéntanos sobre ti:</legend>
+        <label id="name-label">Nombre</label>
+        <input type="text" id="name" placeholder="nombre" required></input>
+        <label id="email-label">Correo electrónico</label>
+        <input type="email" id="email" placeholder="correo electrónico" required></input>
+        <label id="number-label">Edad (opcional)</label>
+        <input type="number" id="number" placeholder="edad" min="10" max="100"></input>
+      </fieldset>
+
+      <fieldset class="heardAboutUs">
+        <legend>¿Cómo se enteró de nosotros?</legend>
+        <select id="dropdown">
+          <option>Seleccione una opción a continuación</option>
+          <option>Amigo / familiar</option>
+          <option>Redes sociales</option>
+          <option>Medios impresos</option>
+          <option>Medios visuales</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="contact">
+        <legend>Nos comunicamos en persona, por teléfono o por correo electrónico?</legend>
+        <div class="contacttype">
+          <input type="radio" name="value" value="option">En persona
+          <input type="radio" name="value" value="option">Teléfono
+          <input type="radio" name="value" value="option">Correo electrónico
+        </div>
+      </fieldset>
+
+      <fieldset class="service">
+        <legend>¿Cómo calificaría nuestro servicio?</legend>
+        <div>
+          <input type="checkbox" value="choice">1</input>
+          <input type="checkbox" value="choice">2</input>
+          <input type="checkbox" value="choice">3</input>
+          <input type="checkbox" value="choice">4</input>
+          <input type="checkbox" value="choice">5</input>
+        </div>
+      </fieldset>
+      <fieldset class="">
+        <legend>¿Preguntas, comentarios?</legend>
+        <textarea></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+
+  </body>
+</html>
